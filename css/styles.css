@@ -1,0 +1,166 @@
+/** NOTE - Custom styles for Rotary Club of Club Name 
+* website at https://www.rotaryclubname.org
+*/
+
+:root {
+    /** NOTE Define site theme and ui colors here 
+     * Rotary Masterbrand Logo styles are defined in 
+     * `css/rotary-masterbrand-signature.css`
+     * 
+     * Named colors are defined in `css/rotary-colors.css`
+     * Based on color values from rotary.org Brand Central
+     * https://brandcenter.rotary.org/en-us/our-brand/brand-elements/colors
+     * and well-implemented at https://rotary.blue
+     * 
+     * Modify the variables below to create your own color scheme
+    */
+    --primary-color: var(--rotary-royal-blue);
+    --secondary-color: var(--azure);
+    --tertiary-color: var(--cranberry);
+    --highlight-color: var(--rotary-gold);
+
+    --primary-text-color: var(--black);
+    --headline-color: var(--primary-color);
+    --secondary-headline-color: var(--secondary-color);
+
+    --button-color: var(--cranberry);
+    --button-color-hover: var(--cranberry);
+
+    --headline-color: var(--storm);
+    --ui-border-color: var(--cloud);
+    --ui-border-focus-color: var(--azure);
+}
+
+body {
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    color: var(--primary-text-color);
+    margin: 0;
+    padding: 0
+}
+
+header {
+    background-color: var(--white);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+}
+
+/* SECTION - Navigation Bar */
+
+nav {
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* Remove default list styling and set list items inline */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for even spacing and alignment */
+    justify-content: center; /* Center the menu items */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+/* Style the links */
+nav a {
+    text-decoration: none;
+    color: var(--highlight-color);
+    font-weight: bold;
+    padding: 10px 15px; /* Adjust as needed, but this provides clickable area */
+    display: inline-block;
+    transition: filter 0.3s;
+}
+
+/* Hover effect */
+nav a:hover {
+    filter: brightness(120%);
+}
+
+/* !SECTION - Navigation Bar */
+
+main {
+    width: 90%;
+    max-width: 1600px;
+    margin: 1em auto;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    --tw-text-opacity: 1;
+    color: rgb(57 66 74/var(--tw-text-opacity));
+    font-family: Open Sans;
+}
+
+h1 { /* Page Title */
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 5.625rem;
+        font-family: Open Sans Light;
+}
+h3 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 9px;
+}
+
+/* SECTION - Footer */
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color); /* Primary color for the footer background */
+    color: #ffffff; /* White text for better readability on dark background */
+    text-align: center; /* Center align the content */
+    padding: 20px 0; /* Padding for spacing */
+    font-size: 0.9em; /* Slightly smaller font size */
+    margin: 0;
+}
+
+footer a {
+    color: var(--highlight-color); /* Highlight color for links */
+    text-decoration: none; /* No underline for links */
+    transition: filter 0.3s ease; /* Smooth transition for filter effect */
+}
+
+footer a:hover {
+    filter: brightness(120%); /* Lighten link color on hover */
+}
+
+footer ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 20px 0; /* Margin for spacing */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center the list items */
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+}
+
+footer ul li {
+    margin: 0 10px; /* Spacing between list items */
+}
+
+footer address {
+    margin-bottom: 20px; /* Spacing below the address block */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    footer ul {
+        flex-direction: column; /* Stack the list vertically on small screens */
+        align-items: center; /* Align items in the center */
+    }
+
+    footer ul li {
+        margin-bottom: 10px; /* Spacing between stacked list items */
+    }
+}
+
+/* !SECTION - Footer */
