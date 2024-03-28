@@ -1,0 +1,275 @@
+@charset "UTF-8";
+header {
+  font-family: "Frutiger", Open Sans Light, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 2em;
+  color: rgb(23, 69, 143);
+}
+header .rotary-text,
+header .masterbrand {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+header .rotary-masterbrand-signature {
+  display: flex;
+  justify-content: start;
+  width: 30%;
+  min-width: 150px;
+  max-width: 400px;
+  align-items: flex-start;
+}
+header .rotary-text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 160%;
+  margin-right: 1em;
+}
+header .rotary-text img,
+header .masterbrand img {
+  width: 100%;
+  height: auto;
+}
+header .text-above,
+header .text-below {
+  font-family: "Frutiger", Open Sans Light, Arial, Helvetica, sans-serif;
+  font-size: 8em;
+  margin: 0 0.3em 0 0;
+  word-wrap: break-word;
+  text-align: right;
+}
+
+@media (min-width: 600px) {
+  header .text-above,
+  header .text-below {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1000px) {
+  header .text-above,
+  header .text-below {
+    font-size: 2.2em;
+    width: 160%;
+  }
+}
+@font-face {
+  font-family: "Frutiger";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Frutiger"), url("../typography/frutiger/webfont/Frutiger.woff") format("woff");
+}
+@font-face {
+  font-family: "Frutiger Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Frutiger Bold"), url("../typography/frutiger/webfont/Frutiger_bold.woff") format("woff");
+}
+body {
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  color: rgb(37, 38, 47);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Frutiger Bold", Open Sans, Arial, Helvetica, sans-serif;
+  color: rgb(0, 105, 200);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 5.625rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 9px;
+}
+
+main button {
+  font-family: Frutiger, Open Sans, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+main button.ryla, main button.alt, main button {
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  border: 2px solid;
+}
+
+header,
+nav,
+footer {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  margin-top: 1em;
+}
+
+nav {
+  background-color: rgb(23, 69, 143);
+  margin-top: 1em;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(247, 168, 27);
+  font-weight: bold;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: filter 0.3s;
+}
+nav a:hover {
+  filter: brightness(120%);
+}
+
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 1em auto;
+  padding: 0;
+}
+main button {
+  background-color: rgb(23, 69, 143);
+  border-color: rgb(23, 69, 143);
+  color: rgb(255, 255, 255);
+}
+main button:hover, main button:focus {
+  background-color: rgb(0, 162, 224);
+  border-color: rgb(0, 162, 224);
+  color: rgb(255, 255, 255);
+}
+main button:active {
+  background-color: #14beff;
+  border-color: #14beff;
+  color: rgb(255, 255, 255);
+}
+main button.alt {
+  background-color: transparent;
+  border-color: rgb(23, 69, 143);
+  color: rgb(23, 69, 143);
+}
+main button.alt:hover, main button.alt:focus {
+  background-color: rgb(23, 69, 143);
+  border-color: rgb(23, 69, 143);
+  color: rgb(255, 255, 255);
+}
+main button.alt:active {
+  background-color: #1e5abb;
+  border-color: #1e5abb;
+  color: rgb(255, 255, 255);
+}
+main button.ryla {
+  background-color: transparent;
+  border-color: rgb(212, 19, 103);
+  color: rgb(212, 19, 103);
+}
+main button.ryla:hover, main button.ryla:focus {
+  background-color: rgb(212, 19, 103);
+  border-color: rgb(212, 19, 103);
+  color: rgb(255, 255, 255);
+}
+main button.ryla:active {
+  background-color: #ec2e81;
+  border-color: #ec2e81;
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  background-color: rgb(23, 69, 143);
+  color: #ffffff;
+  padding: 20px 0;
+  font-size: 0.9em;
+}
+footer a {
+  color: rgb(247, 168, 27);
+  text-decoration: none;
+  transition: filter 0.3s ease;
+}
+footer a:hover {
+  filter: brightness(120%);
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer ul li {
+  margin: 0 10px;
+}
+footer address {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer ul li {
+    margin-bottom: 10px;
+  }
+}
+
+/** NOTE - Rotary International Brand Colors
+ * Learn more at —
+ * https://brandcenter.rotary.org/en-us/our-brand/brand-elements/colors
+ * and https://rotary.blue
+ * 
+ * USAGE: 
+ * 1. Use these color variables in your CSS to build your own Rotary-branded webpages.
+ * 
+ * 2. Copy and paste the following snippet in your custom CSS: 
+
+    :root {
+        --primary-color: var(--rotary-royal-blue);
+        --secondary-color: var(--azure);
+        --tertiary-color: var(--cranberry);
+        --highlight-color: var(--rotary-gold);
+
+        --button-color: var(--cranberry);
+        --button-color-hover: var(--cranberry);
+
+        --headline-color: var(--storm);
+        --ui-border-color: var(--cloud);
+        --ui-border-focus-color: var(--azure);
+    }
+    * Modify the colors as needed using filters, e.g.:
+    * You can change the primary color slightly by applying a
+    * filter to make it transparent on hover:
+
+    .element:hover {
+        background-color: rgba(var(--primary-color), 0.8);
+    }
+
+*
+*//*# sourceMappingURL=main.css.map */

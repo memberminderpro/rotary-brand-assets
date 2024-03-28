@@ -1,0 +1,51 @@
+// _colors.scss defines all named colors like $rotary-royal-blue, $azure, etc.
+
+@use 'colors';
+@use 'theme';
+
+@forward 'colors';
+@forward 'theme';
+    /** NOTE - Rotary International Brand Colors
+     * Learn more at —
+     * https://brandcenter.rotary.org/en-us/our-brand/brand-elements/colors
+     * and https://rotary.blue
+     * 
+     * USAGE: 
+     * 1. Use these color variables in your CSS to build your own Rotary-branded webpages.
+     * 
+     * 2. Copy and paste the following snippet in your custom CSS: 
+
+        :root {
+            --primary-color: var(--rotary-royal-blue);
+            --secondary-color: var(--azure);
+            --tertiary-color: var(--cranberry);
+            --highlight-color: var(--rotary-gold);
+
+            --button-color: var(--cranberry);
+            --button-color-hover: var(--cranberry);
+
+            --headline-color: var(--storm);
+            --ui-border-color: var(--cloud);
+            --ui-border-focus-color: var(--azure);
+        }
+        * Modify the colors as needed using filters, e.g.:
+        * You can change the primary color slightly by applying a
+        * filter to make it transparent on hover:
+
+        .element:hover {
+            background-color: rgba(var(--primary-color), 0.8);
+        }
+
+    *
+    */
+// Theme Color Variables
+$primary-color: colors.$rotary-royal-blue;
+$primary-text-color: colors.$blue-gray;
+$secondary-color: colors.$azure;
+$tertiary-color: colors.$cranberry;
+$highlight-color: colors.$rotary-gold;
+
+$button-color: colors.$cranberry;
+$headline-color: colors.$storm;
+$ui-border-color: colors.$cloud;
+$ui-border-focus-color: colors.$azure;

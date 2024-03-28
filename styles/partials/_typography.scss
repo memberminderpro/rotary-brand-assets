@@ -1,0 +1,58 @@
+// styles/partials/_typography.scss
+@use 'colors';
+@use 'theme' as theme;
+
+@font-face {
+  font-family: 'Frutiger';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Frutiger'), url('../typography/frutiger/webfont/Frutiger.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Frutiger Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Frutiger Bold'), url('../typography/frutiger/webfont/Frutiger_bold.woff') format('woff');
+}
+
+body {
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  color: theme.$primary-text-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  
+  font-family: 'Frutiger Bold', Open Sans, Arial, Helvetica, sans-serif;
+  color: theme.$secondary-color;
+}
+
+h1 {
+  // Page Title
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 5.625rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 9px;
+}
+
+main {
+  button {
+    @extend %base-button !optional;
+    font-family: Frutiger, Open Sans, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+}

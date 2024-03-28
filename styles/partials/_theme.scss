@@ -1,0 +1,61 @@
+// _colors.scss defines all named colors like $rotary-royal-blue, $azure, etc.
+@use 'colors';
+
+// Theme Color Variables
+$primary-color: colors.$rotary-royal-blue !default;
+$primary-text-color: colors.$blue-gray !default;
+$secondary-color: colors.$azure !default;
+$tertiary-color: colors.$sky-blue !default;
+$highlight-color: colors.$rotary-gold !default;
+
+// Button Color Variables
+
+// Primary Button Base State
+$primary-button-bg-color: $primary-color !default;
+$primary-button-border-color: $primary-color !default;
+$primary-button-text-color: colors.$white !default;
+
+// Primary Button Hover State
+$primary-button-bg-color-hover: $tertiary-color !default;
+$primary-button-border-color-hover: $tertiary-color !default;
+$primary-button-text-color-hover: colors.$white !default;
+
+// Primary Button Active State
+$primary-button-bg-color-active: lighten($tertiary-color, 10%) !default;
+$primary-button-border-color-active: lighten($tertiary-color, 10%) !default;
+$primary-button-text-color-active: colors.$white !default; // Fixed variable name to match active state
+
+// Alternate Button Base State
+$alt-button-bg-color: transparent !default;
+$alt-button-border-color: $primary-color !default;
+$alt-button-text-color: $primary-color !default;
+
+// Alternate Button Hover State
+$alt-button-bg-color-hover: $primary-color !default;
+$alt-button-border-color-hover: $primary-color !default;
+$alt-button-text-color-hover: colors.$white !default;
+
+// Alternate Button Active State
+$alt-button-bg-color-active: lighten($primary-color, 10%) !default;
+$alt-button-border-color-active: lighten($primary-color, 10%) !default;
+$alt-button-text-color-active: colors.$white !default;
+
+// RYLA Button Base State
+$ryla-button-bg-color: transparent !default;
+$ryla-button-border-color: colors.$cranberry !default;
+$ryla-button-text-color: colors.$cranberry !default;
+
+// RYLA Button Hover State
+$ryla-button-bg-color-hover: colors.$cranberry !default;
+$ryla-button-border-color-hover: colors.$cranberry !default;
+$ryla-button-text-color-hover: colors.$white !default;
+
+// RYLA Button Active State
+$ryla-button-bg-color-active: lighten(colors.$cranberry, 10%) !default;
+$ryla-button-border-color-active: lighten(colors.$cranberry, 10%) !default;
+$ryla-button-text-color-active: colors.$white !default;
+
+
+$headline-color: colors.$storm !default;
+$ui-border-color: colors.$cloud !default;
+$ui-border-focus-color: colors.$azure !default;

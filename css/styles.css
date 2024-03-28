@@ -5,15 +5,16 @@
 :root {
     /** NOTE Define site theme and ui colors here 
      * Rotary Masterbrand Logo styles are defined in 
-     * `css/rotary-masterbrand-signature.css`
+     * `styles/partials/_masterbrand.scss`
      * 
-     * Named colors are defined in `css/rotary-colors.css`
+     * Named colors are defined in `styles/partials/_colors.scss`
      * Based on color values from rotary.org Brand Central
      * https://brandcenter.rotary.org/en-us/our-brand/brand-elements/colors
      * and well-implemented at https://rotary.blue
      * 
      * Modify the variables below to create your own color scheme
     */
+   
     --primary-color: var(--rotary-royal-blue);
     --secondary-color: var(--azure);
     --tertiary-color: var(--cranberry);

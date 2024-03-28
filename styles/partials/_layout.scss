@@ -1,0 +1,164 @@
+// styles/partials/_layout.scss
+@use 'colors';
+@use 'theme' as theme;
+
+%base-button {
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  border: 2px solid;
+}
+
+header,
+nav,
+footer {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: colors.$white;
+  margin-top: 1em;
+}
+
+nav {
+  background-color: theme.$primary-color;
+  margin-top: 1em;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: theme.$highlight-color;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: filter 0.3s;
+
+    &:hover {
+      filter: brightness(120%);
+    }
+  }
+}
+
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 1em auto;
+  padding: 0;
+
+  button {
+    @extend %base-button;
+    background-color: theme.$primary-button-bg-color;
+    border-color: theme.$primary-button-border-color;
+    color: theme.$primary-button-text-color;
+
+    &:hover,
+    &:focus {
+      background-color: theme.$primary-button-bg-color-hover;
+      border-color: theme.$primary-button-border-color-hover;
+      color: theme.$primary-button-text-color-hover;
+    }
+
+    &:active {
+      background-color: theme.$primary-button-bg-color-active;
+      border-color: theme.$primary-button-border-color-active;
+      color: theme.$primary-button-text-color-active;
+    }
+
+    &.alt {
+      @extend %base-button;
+      background-color: theme.$alt-button-bg-color;
+      border-color: theme.$alt-button-border-color;
+      color: theme.$alt-button-text-color;
+
+      &:hover,
+      &:focus {
+        background-color: theme.$alt-button-bg-color-hover;
+        border-color: theme.$alt-button-border-color-hover;
+        color: theme.$alt-button-text-color-hover;
+      }
+
+      &:active {
+        background-color: theme.$alt-button-bg-color-active;
+        border-color: theme.$alt-button-border-color-active;
+        color: theme.$alt-button-text-color-active;
+      }
+    }
+
+    &.ryla {
+      @extend %base-button;
+      background-color: theme.$ryla-button-bg-color;
+      border-color: theme.$ryla-button-border-color;
+      color: theme.$ryla-button-text-color;
+
+      &:hover,
+      &:focus {
+        background-color: theme.$ryla-button-bg-color-hover;
+        border-color: theme.$ryla-button-border-color-hover;
+        color: theme.$ryla-button-text-color-hover;
+      }
+
+      &:active {
+        background-color: theme.$ryla-button-bg-color-active;
+        border-color: theme.$ryla-button-border-color-active;
+        color: theme.$ryla-button-text-color-active;
+      }
+    }
+  }
+
+}
+
+footer {
+  background-color: theme.$primary-color;
+  color: #ffffff;
+  padding: 20px 0;
+  font-size: 0.9em;
+
+  a {
+    color: theme.$highlight-color;
+    text-decoration: none;
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: brightness(120%);
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+      margin: 0 10px;
+    }
+  }
+
+  address {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    ul {
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
