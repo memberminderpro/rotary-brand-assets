@@ -5,17 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rotary Club of Club Name | District 9999</title>
-    <link rel="stylesheet" href="css/main.min.css">
+    <!-- <link rel="stylesheet" href="css/main.min.css"> -->
+    <link rel="stylesheet" href="css/rotary-masterbrand-signature.css">
 </head>
 <body>
     <header>
         <div class="rotary-masterbrand-signature">
             <div class="rotary-text-group">
-                <div class="text-above">&nbsp;<!-- District 9999 --></div>
+                <div class="text-above text">&nbsp;<!-- District 9999 --></div>
                 <div class="rotary-text">
                     <img src="img/Rotary.svg" alt="Rotary International Logo">
                 </div>
-                <div class="text-below">Club of Club Name</div>
+               
+                <div class="text-below text">Club of Club Name</div>
             </div>
             <div class="masterbrand">
                 <img src="img/rotary-masterbrand.svg" alt="The Rotary International Masterbrand logo.">
@@ -58,4 +60,23 @@
         <p>&copy; 2024 Rotary Club of Club Name. All Rights Reserved.</p>
         <a href="your-privacy-policy-url">Privacy Policy</a> | <a href="your-terms-url">Terms of Use</a>
     </footer>
+
+    <script>
+        window.onload = function() {
+            var container = document.querySelector('.rotary-masterbrand-signature');
+            var allText = document.querySelectorAll('.text');
+        
+            function updateTextSize() {
+                var containerWidth = container.offsetWidth;
+                var textSize = containerWidth / 15;
+
+                allText.forEach(text => {
+                    text.style.fontSize = textSize + 'px';
+                })
+            }
+            updateTextSize();
+
+            window.addEventListener('resize', updateTextSize);
+        }
+    </script>
 </body>
