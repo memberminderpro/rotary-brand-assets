@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts and Colors */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #002D62;
+}
+
+a {
+    color: #FFB500;
+    text-decoration: none;
+}
+
+header {
+    background-color: #002D62;
+    color: #FFFFFF;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1440x400') no-repeat center center/cover;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0 20px;
+}
+
+.cta-button {
+    background-color: #FFB500;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #002D62;
+}
+
+/* Meeting Info */
+.meeting-info {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.meeting-info .map iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.why-join {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #F3F3F3;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #F3F3F3;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #002D62;
+}
