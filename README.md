@@ -81,7 +81,7 @@ The following is an example useage of the SVG files on a standard html page. Ple
                 <div class="text-below">Club of Club Name</div>
             </div>
             <div class="masterbrand">
-                <img src="img/rotary-masterbrand.svg" alt="The Rotary International Masterbrand logo.">
+                <img src="img/rotary-moe.svg" alt="The Rotary International Masterbrand logo.">
             </div>
         </div>
     </header>
