@@ -43,11 +43,11 @@ body {
 
 ### SVG Files
 
-The SVG files can be used directly in your HTML to display the Rotary text and the Masterbrand logo. Ensure that you adhere to Rotary International's guidelines for logo usage and placement.
+The SVG files can be used directly in your HTML to display the Rotary text and the Mark of Excellence logo. Ensure that you adhere to Rotary International's guidelines for logo usage and placement.
 
 ```html
-<img src="path/to/rotary-text.svg" alt="Rotary Text">
-<img src="path/to/rotary-masterbrand-logo.svg" alt="Rotary Masterbrand Logo">
+<img src="path/to/rotary-text.svg" alt="Rotary test">
+<img src="path/to/rotary-moe.svg" alt="Rotary Mark of Excellence icon">
 ```
 
 ### Putting it all together
@@ -81,7 +81,7 @@ The following is an example useage of the SVG files on a standard html page. Ple
                 <div class="text-below">Club of Club Name</div>
             </div>
             <div class="masterbrand">
-                <img src="img/rotary-moe.svg" alt="The Rotary International Masterbrand logo.">
+                <img src="img/rotary-moe.svg" alt="The Rotary International Mark of Excellence icon.">
             </div>
         </div>
     </header>
