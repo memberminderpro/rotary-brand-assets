@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Brand Colors */
+        :root {
+            --royal-blue: #17458f;
+            --gold: #f7a81b;
+            --azure: #0067c8;
+            --sky-blue: #00a2e0;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, 
+                var(--royal-blue) 0%, 
+                var(--azure) 35%, 
+                var(--sky-blue) 65%, 
+                var(--azure) 85%, 
+                var(--royal-blue) 100%);
+            background-size: 300% 300%;
+            animation: gradientAnimation 15s ease infinite;
+            color: var(--white);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 100%;
+        }
+
+        h1 {
+            font-size: 8vw;
+            color: var(--white);
+            display: inline-block;
+            -webkit-text-stroke: 3px var(--royal-blue);
+            text-stroke: 3px var(--royal-blue);
+            text-shadow: 
+                0 10px 30px rgba(0, 0, 0, 0.2),
+                0 15px 40px rgba(0, 0, 0, 0.15),
+                0 20px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coming Soon</h1>
+    </div>
+</body>
+</html>
