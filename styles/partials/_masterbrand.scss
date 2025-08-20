@@ -1,6 +1,21 @@
 // _masterbrand.scss
 @use 'colors'; // Assuming _colors.scss is in the same directory and contains the color variables
 
+// @font-face definitions for Frutiger fonts
+@font-face {
+  font-family: 'Frutiger';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Frutiger'), url('../typography/frutiger/webfont/Frutiger.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Frutiger Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Frutiger Bold'), url('../typography/frutiger/webfont/Frutiger_bold.woff') format('woff');
+}
+
 header {
   // font-family: 'FrutigerLTStd', Open Sans Light, Arial, Helvetica, sans-serif;
   font-family: 'Frutiger', Open Sans Light, Arial, Helvetica, sans-serif;

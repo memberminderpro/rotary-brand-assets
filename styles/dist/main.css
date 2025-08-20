@@ -1,32 +1,70 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Frutiger";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Frutiger"), url("../typography/frutiger/webfont/Frutiger.woff") format("woff");
+}
+@font-face {
+  font-family: "Frutiger Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Frutiger Bold"), url("../typography/frutiger/webfont/Frutiger_bold.woff") format("woff");
+}
 header {
   font-family: "Frutiger", Open Sans Light, Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   margin: 2em;
   color: rgb(23, 69, 143);
 }
 header .rotary-text,
 header .masterbrand {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
 }
 header .rotary-masterbrand-signature {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   width: 30%;
   min-width: 150px;
   max-width: 400px;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 header .rotary-text-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   max-width: 160%;
   margin-right: 1em;
 }
@@ -109,6 +147,7 @@ main button.ryla, main button.alt, main button {
   padding: 1em 1.5em;
   border-radius: 8px;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   border: 2px solid;
 }
@@ -135,8 +174,12 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 nav a {
   text-decoration: none;
@@ -144,10 +187,14 @@ nav a {
   font-weight: bold;
   padding: 10px 15px;
   display: inline-block;
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
   transition: filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s;
 }
 nav a:hover {
-  filter: brightness(120%);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 main {
@@ -211,18 +258,27 @@ footer {
 footer a {
   color: rgb(247, 168, 27);
   text-decoration: none;
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
   transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
 }
 footer a:hover {
-  filter: brightness(120%);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 footer ul {
   list-style-type: none;
   padding: 0;
   margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 footer ul li {
   margin: 0 10px;
@@ -232,8 +288,13 @@ footer address {
 }
 @media screen and (max-width: 600px) {
   footer ul {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer ul li {
     margin-bottom: 10px;
