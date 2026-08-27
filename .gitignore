@@ -36,3 +36,10 @@ $RECYCLE.BIN/
 .netlify/
 .vercel/
 .firebase/
+desktop.ini
+__MACOSX/
+.#*
+npm-debug.log*
+yarn-error.log*
+.eslintcache
+.stylelintcache
